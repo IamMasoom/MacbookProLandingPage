@@ -11,8 +11,7 @@ const MacContainer = () => {
   model.scene.traverse((e) => {
     meshes[e.name] = e
   })
-  console.log(meshes);
-  
+
   meshes.screen.rotation.x = THREE.MathUtils.degToRad(180)
   meshes.matte.material.metalness = 0
   meshes.matte.material.map = tex
