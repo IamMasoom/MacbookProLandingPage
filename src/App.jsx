@@ -8,6 +8,11 @@ const App = () => {
   return (
     <>
       <div className='w-full h-screen bg-black'>
+        <div className='navbar flex gap-10 py-12 absolute top-0 left-1/2 -translate-x-1/2'>
+          {["iPhone","iPad", "services", "support", "products"].map((e)=>(
+            <a href="" className='text-white capitalize'>{e}</a>
+          ))}
+        </div>
         <div className='absolute flex flex-col items-center top-32 left-1/2 -translate-x-1/2 text-white'>
 
           <h3 className='masked text-7xl tracking-tight font-bold' data-text="macbook pro">macbook pro</h3>
